@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: darkslategray;
+}
+
+body {
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+  gap: 1ch;
+  background-color: darkslategray;
+}
+
+@media (width >= 500px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.selection ul {
+  display: grid;
+  gap: 5ch;
+
+  list-style-type: none;
+  padding: 5rem;
+}
+
+.selection li {
+  padding: 5ch;
+  border: 1px solid #ccc;
+}
+
+.selection li:hover {
+  cursor: pointer;
+  font-style: italic;
+  background-color: lightslategray;
+}
+
+.details {
+  padding: 3rem;
+}
+
+.details p {
+  border: 1px solid white;
+  padding: 1rem;
+}
